@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Conversor de Moneda (Local)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #333;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .rate-box {
+      padding: 14px;
+      margin: 10px 0;
+      background: #eef2ff;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Conversor de Moneda Local</h1>
+
+    <!-- Tasas estáticas -->
+    <div class="rate-box">
+      <span class="label">USD → EUR:</span>
+      1 USD = <span id="usd-eur-rate">0.93</span> EUR
+    </div>
+
+    <div class="rate-box">
+      <span class="label">USD → GBP:</span>
+      1 USD = <span id="usd-gbp-rate">0.79</span> GBP
+    </div>
+
+    <div class="rate-box">
+      <span class="label">USD → MXN:</span>
+      1 USD = <span id="usd-mxn-rate">18.40</span> MXN
+    </div>
+
+    <div class="rate-box">
+      <span class="label">USD → JPY:</span>
+      1 USD = <span id="usd-jpy-rate">150.12</span> JPY
+    </div>
+
+    <p style="font-size: 12px; color: #666;">
+      *Valores estáticos para práctica de web scraping.
+    </p>
+  </div>
+
+</body>
+</html>
